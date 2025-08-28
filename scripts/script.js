@@ -95,7 +95,7 @@ function startClockWhenVisible() {
             // Show intro messages before counter
             runIntroMessages(() => {
                 // after messages -> start clock
-                timer = setInterval(updateClock, 220); // 1 min = 2s demo
+                timer = setInterval(updateClock, 2000); // 1 min = 2s demo
             });
             observer.disconnect();
         }
@@ -108,7 +108,8 @@ startClockWhenVisible();
 function runIntroMessages(callback) {
     const messages = [
         "Madhu... do you even know how much you mean to me?",
-        "I remember everything you've shared about you..",
+        "I remember everything you've shared...",
+        "The way we talked for hours and hours...",
         "You know this song, right?",
         "Yes. Its from 'Friends' :)",
         "Just so you know, I was planning this for a month.. Just for you",
